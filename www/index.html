@@ -3,7 +3,7 @@ c<!DOCTYPE html>
 <html>
 <style>
 	#content, #index {
-		background-image: url('img/map_mk3.png'); 
+		background-image: url('img/larkinBG.png'); 
 		background-repeat: no-repeat;
 		background-size: 1024px 768px;
 		max-height: 768px ; 
@@ -12,22 +12,61 @@ c<!DOCTYPE html>
 
 	
 
-	#info1 {
-		position: absolute;
-		top: 400px;
-		left: 40px;
-	}
 
 	.stopLink {
 		position: absolute;
 		display: inline-block;
 	}
 
-	#info2 {
+	#label1 {
+		left: 576px;
+		top: 66px;
+		width: 368px;
+		background-color: blue;
+
+
+	}
+
+	#label2 {
+		left: 362px;
+		top: 169px;
+		width: 469px;
+		background-color: blue;
+
+
+	}
+
+		#label3 {
+		left: 183px;
+		top: 330px;
+		width: 368px;
+		background-color: blue;
+
+
+	}
+
+		#label4 {
+		left: 213px;
+		top: 440px;
+		width: 368px;
+		background-color: blue;
+	}
+
+		#label5 {
+		left: 237px;
+		top: 530px;
+		width: 368px;
+		background-color: blue;
+
+
+	}
+
+	#info1 {
 		left: 941px;
 		top: 45px;
 		width: 100px; 
 		height:	240px;
+		background-color: blue;
 	}
 	.pageinfocontainer {
 		background-color: #D8D8D8;
@@ -89,14 +128,32 @@ c<!DOCTYPE html>
 
 				
 
-				<a href="#stop1" data-inline="true" data-rel="popup" data-position-to="origin">
-
-					
-
+				<a id="info1" class="stopLink" href="#stop1">
 				</a>
+				<div id="label1" class="stopLink">
+					<h1> Lourdes Day Care Centre </h1>
+				</div>
 
-				<a id="info2" class="stopLink" href="#stop1">
-				</a>
+				<div id="label2" class="stopLink">
+					<h1> Larkin Community College </h1>
+				</div>
+
+				<div id="label3" class="stopLink">
+					<h1> Parnell Statue </h1>
+				</div>
+
+
+				<div id="label4" class="stopLink">
+					<h1> Jim Larkin Statue </h1>
+				</div>
+
+				<div id="label5" class="stopLink">
+					<h1> O'Connell Statue </h1>
+				</div>
+
+				<a id="info2" class="stopLink" href="#stop2"></a>
+
+
 
 		    </div>
 		</div>  
