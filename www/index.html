@@ -260,6 +260,9 @@
     		//Check Connection script
     		document.addEventListener("offline", function(){ alert("No Internet Connection , Some features may not work") }, false);
 
+    		// Prevent all scrolling
+    		document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
+
 
 
         </script>
