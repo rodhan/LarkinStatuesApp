@@ -161,6 +161,84 @@
 		display: block;
 		list-style-type: none;
 	}
+
+
+
+            .infoPageContainer {
+                background-color: #e5e6e7;
+                border-style: solid;
+                border-color: #a4a4a4;
+                border-width: 2px;
+
+                text-transform: none;
+            }
+
+            .infoPageLogoContainer {
+                margin-left: 30px;
+                margin-top: 30px;
+                width: 330px;
+                height: 260px;
+                float: left;
+            }
+
+            .infoPageLogoImage {
+                width: 150px;
+                height: 150px;
+
+                margin-left: 90px;
+                margin-top: 55px;
+            }
+
+            .infoPageDescriptionContainer {
+                margin-right: 30px;
+                margin-top: 30px;
+                height: 260px;
+                width: 540px;
+                float: right;
+                font-size: 15px;
+            }
+
+            .infoPageDescriptionHeading {
+                font-weight: bold;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+
+            .infoPageDescriptionBody {
+                margin: 10px;
+            }
+
+            .infoPageVideoContainerLeft {
+                margin-left: 30px;
+                margin-top: 50px;
+                width: 430px;
+                height: 330px;
+                float: left;
+            }
+
+            .infoPageVideoContainerRight {
+                margin-right: 30px;
+                margin-top: 50px;
+                width: 430px;
+                height: 330px;
+                float: right;
+            }
+
+            .infoPageVideoPlayer {
+                width: 430px;
+                height: 242px; 
+            }
+
+            .infoPageVideoHeading {
+                font-weight: bold;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+
+            .infoPageVideoBody {
+                margin: 10px;
+            }
+
 </style>
     <head>
         <meta charset="utf-8" />
@@ -245,42 +323,36 @@
 		    </header>  
 		      
 		    <div data-role="content">  
-		    		<div class="pageinfocontainer">
-		        		<p> Lourdes Day Care Centre was founded in September 1979 and was officially opened on 8th December 1979.
-		        			The idea for the Lourdes Day Care Centre began in the sacristy of Lourdes Church  on Seán Mc Dermott Street Dublin 1.  In the 1970's a group of local people saw that there was a need for a social centre for the elderly to have somewhere warm to meet and have a hot meal.
-		        			Today in 2014, approximately 178 people access the Centre. The centre provides meals on wheels and dining room meals.  It also provides arts, culture and heritage partnership projects for clients.
-							Most of the activities in the Centre are aimed at people having fun; they strongly feel that laughter is the best medicine.</p>  
-		    		</div>
+                                <div>
+                                    <div class="infoPageContainer infoPageLogoContainer">
+                                        <img class="infoPageLogoImage" src="img/LourdesStopLogo.png">
+                                    </div>
+                                    <div class="infoPageContainer infoPageDescriptionContainer">
+                                        <p class="infoPageDescriptionHeading">Lourdes Day Care Centre</p>
+                                        <div class="infoPageDescriptionBody">
+                                            <p>Lourdes Day Care Centre was founded in September 1979 and was officially opened on 8th December 1979. The idea for the Lourdes Day Care Centre began in the sacristy of Lourdes Church  on Seán Mc Dermott Street Dublin 1. In the 1970's a group of local people saw that there was a need for a social centre for the elderly to have somewhere warm to meet and have a hot meal.</p><p>Today in 2014, approximately 178 people access the Centre. The centre provides meals on wheels and dining room meals.  It also provides arts, culture and heritage partnership projects for clients. Most of the activities in the Centre are aimed at people having fun; they strongly feel that laughter is the best medicine.</p>
+                                        </div>  
+                                    </div>
+                                    <div style="clear: both"></div>
+                                </div>
 
-		    		<br>
-		    	<div class="viddescontainer">
-			        <div class="vidcontainer">
-
-			       		 <video src="http://rodhan.com/statues/videos/Tess%20Big%20Jim%20Larkin%20Nov%203rd%20SIGNED%20OFF.mov" width="512" height="288" controls></video>
-
-			   		 </div>
-
-			   		 <div class="descriptioncontainer">
-
-				        <h3>"Big Jim"</h3>
-				        <p>Tess Carroll met Jim Larkin and describes him beautifully in this short video.</p>
-
-				     </div>
-			 </div>
-		        
-		        <div class="viddescontainer">
-					<div class="vidcontainer">
-			        	<video src="http://rodhan.com/statues/videos/Dublin%20Town%20Nov%203rd%20SIGNED%20OFF.mov" width="512" height="288" controls></video>
-			        </div>
-
-			         <div class="descriptioncontainer">
-
-				        <h3>"Dublin Town in 1962"</h3>  
-						<p>A Song by Dermot O'Brien and The Clubman</p>
-						<p>Peggy Bradley and Tess Carroll reminisce with a song about Dublin in 1962.</p>
-					</div>
-				</div>
-		        
+                                <div>
+                                    <div class="infoPageContainer infoPageVideoContainerLeft">
+                                        <video class="infoPageVideoPlayer" src="http://rodhan.com/statues/videos/Tess%20Big%20Jim%20Larkin%20Nov%203rd%20SIGNED%20OFF.mov" controls=""></video>
+                                        <div class="infoPageVideoDetails">
+                                            <p class="infoPageVideoHeading">Big Jim</p>
+                                            <p class="infoPageVideoBody">Tess Carroll met Jim Larkin and describes him beautifully in this short video.</p>
+                                        </div>
+                                    </div>
+                                    <div class="infoPageContainer infoPageVideoContainerRight">
+                                        <video class="infoPageVideoPlayer" src="http://rodhan.com/statues/videos/Dublin%20Town%20Nov%203rd%20SIGNED%20OFF.mov" controls=""></video>
+                                        <div class="infoPageVideoDetails">
+                                            <p class="infoPageVideoHeading">Dublin Town in 1962</p>
+                                            <p class="infoPageVideoBody">Peggy Bradley and Tess Carroll reminisce with a song about Dublin in 1962 by Dermot O'Brien and The Clubman.</p></div>
+                                        </div>
+                                    </div>
+                                    <div style="clear: both"></div>
+                                </div>
 		    </div>
 		    
 		    
