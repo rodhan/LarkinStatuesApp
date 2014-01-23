@@ -180,30 +180,8 @@ c<!DOCTYPE html>
         <script type="text/javascript">
             app.initialize();
 
-
-            //Wait for phonegap to load 
-            document.addEventListener("deviceready", onDeviceReady, false);
-
     		//Check Connection script
-    		function checkConnection() {
-        		var networkState = navigator.network.connection.type;
-
-
-        		 	if  (states[Connection.NONE] ;) {
-						alert('You are not connected to the internet , videos will not work');
-
-					}
-
-					else {
-						alert('Connection detected');
-					}
-
-				}
-
-				//Check for connection
-             function onDeviceReady() {
-        		checkConnection();
-    		}
+    		document.addEventListener("offline", function(){ alert("No Internet Connection , Some features may not work") }, false);
 
 
 
