@@ -8,7 +8,7 @@
 		background-size: 1024px 768px;
 		max-height: 768px ; 
 		max-width:  1024px ;
-		display: none;
+
 
 	}
 
@@ -268,6 +268,15 @@
 
     		//Check Connection script
     		document.addEventListener("offline", function(){ alert("No Internet Connection , Some features may not work") }, false);
+
+    		//Delay Splashscreen 
+
+    		document.addEventListener("deviceready", function(e) {
+				window.setTimeout(function() {
+					navigator.splashscreen.hide();
+					},5000);
+			
+				}, "false");
 
     		// Prevent all scrolling
     		document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
