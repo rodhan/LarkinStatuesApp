@@ -271,10 +271,11 @@
     		//Check Connection script
     		document.addEventListener("offline", function(){ alert("No Internet Connection , Some features may not work") }, false);
 
-    		//Check if images are loaded.
-			document.addEventListener("deviceready", function(){
-				alert("i am ready");
-			}, false);
+			 document.addEventListener('deviceready', function() {
+  				navigator.splashscreen.hide();
+			});
+
+
 
     		// Prevent all scrolling
     		document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
